@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             projects: 'Projetos',
             technologies: 'Tecnologias',
             contact: 'Contato',
-            helloWorld: 'Olá, mundo,',
+            helloWorld: 'Olá mundo,',
             webDeveloper: 'Eu sou um Desenvolvedor<br>Full Stack',
             welcomeMessage: 'bem-vindo ao meu website de portfólio',
             moreAboutMe: 'Mais sobre mim',
@@ -193,4 +193,5 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
 });
