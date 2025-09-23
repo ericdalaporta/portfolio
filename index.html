@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#hero" class="signature-name">Eric Dala Porta</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#sobre" data-lang-key="about">Sobre</a></li>
+                <li><a href="#projetos" data-lang-key="projects">Projetos</a></li>
+                <li><a href="#tecnologias" data-lang-key="technologies">Tecnologias</a></li>
+                <li><a href="#contato" data-lang-key="contact">Contato</a></li>
+            </ul>
+            <div class="nav-controls">
+                <label class="toggle" for="theme-checkbox">
+                  <input type="checkbox" class="input" id="theme-checkbox" />
+                  <div class="icon icon--moon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                      <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clip-rule="evenodd"></path>
+                    </svg>
+                  </div>
+                  <div class="icon icon--sun">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                      <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"></path>
+                    </svg>
+                  </div>
+                </label>
+                <label class="toggle" for="language-checkbox">
+                  <input type="checkbox" class="input" id="language-checkbox" />
+                  <div class="icon icon--language">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                        <path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+                    </svg>
+                  </div>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-section-inner">
+                <div class="hero-content animate-left">
+                    <p data-lang-key="helloWorld"></p>
+                    <h1 data-lang-key="webDeveloper"></h1>
+                    <p class="subtitle" data-lang-key="welcomeMessage"></p>
+                    <div class="hero-actions">
+                        <a href="#sobre" class="button type--C">
+                          <div class="button__line"></div>
+                          <div class="button__line"></div>
+                          <span class="button__text" data-lang-key="moreAboutMe"></span>
+                          <div class="button__drow1"></div>
+                          <div class="button__drow2"></div>
+                        </a>
+                        <div class="social-links">
+                            <a href="https://github.com/ericdalaporta" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/eric-dala-porta-469904301/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/ericwdallap/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image animate-right">
+                    <img src="img/southpark.png" alt="Desenvolvedor" class="animated-character">
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="section animate-left">
+            <div class="section-content">
+                <h2 data-lang-key="aboutMeTitle"></h2>
+                <p data-lang-key="aboutMeText"></p>
+            </div>
+        </section>
+
+        <section id="projetos" class="section animate-right">
+            <div class="section-content">
+                <h2 data-lang-key="projectsTitle"></h2>
+                <div class="project-grid">
+
+                    <div class="card">
+                      <img class="card__image" src="img/GerenciamentoSalas.png" alt="Portal de Agendamento">
+                      <div class="card__content">
+                        <p class="card__title" data-lang-key="project1Title"></p>
+                        <p class="card__description" data-lang-key="project1Description"></p>
+                        <div class="card__buttons">
+                            <a href="https://ericdalaporta.github.io/portal-de-agendamento/" class="animated-button" target="_blank">
+                                <span data-lang-key="previewLink"></span>
+                                <span></span>
+                            </a>
+                            <a href="https://github.com/ericdalaporta/portal-de-agendamento" class="animated-button" target="_blank">
+                                <span data-lang-key="codeLink"></span>
+                                <span></span>
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <img class="card__image" src="img/data.png" alt="PresiData-BR">
+                      <div class="card__content">
+                        <p class="card__title" data-lang-key="project2Title"></p>
+                        <p class="card__description" data-lang-key="project2Description"></p>
+                        <div class="card__buttons">
+                            <a href="https://ericdalaporta.github.io/PresiData-BR/" class="animated-button" target="_blank">
+                                <span data-lang-key="previewLink"></span>
+                                <span></span>
+                            </a>
+                            <a href="https://github.com/ericdalaporta/PresiData-BR" class="animated-button" target="_blank">
+                                <span data-lang-key="codeLink"></span>
+                                <span></span>
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <img class="card__image" src="img/bookshelf.png" alt="Bookshelf">
+                      <div class="card__content">
+                        <p class="card__title" data-lang-key="project3Title"></p>
+                        <p class="card__description" data-lang-key="project3Description"></p>
+                        <div class="card__buttons">
+                            <a href="https://ericdalaporta.github.io/bookshelf/" class="animated-button" target="_blank">
+                                <span data-lang-key="previewLink"></span>
+                                <span></span>
+                            </a>
+                            <a href="https://github.com/ericdalaporta/bookshelf" class="animated-button" target="_blank">
+                                <span data-lang-key="codeLink"></span>
+                                <span></span>
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="tecnologias" class="section animate-left">
+            <div class="section-content">
+                <h2 data-lang-key="technologiesTitle"></h2>
+                <div class="tech-icons">
+                    <i class="devicon-c-plain" title="C"></i>
+                    <i class="devicon-java-plain-wordmark" title="Java"></i>
+                    <i class="devicon-html5-plain-wordmark" title="HTML5"></i>
+                    <i class="devicon-css3-plain-wordmark" title="CSS3"></i>
+                    <i class="devicon-javascript-plain" title="JavaScript"></i>
+                    <i class="devicon-python-plain-wordmark" title="Python"></i>
+                    <i class="devicon-git-plain-wordmark" title="GIT"></i>
+                    <i class="fas fa-database" title="SQL"></i>
+                    <i class="devicon-linux-plain" title="Linux"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section animate-right">
+            <div class="section-content">
+                <h2 data-lang-key="contactTitle"></h2>
+                <p class="contact-intro-text" data-lang-key="contactText"></p>
+                <div class="contact-layout">
+                    <div class="contact-details">
+                        <div class="contact-info">
+                            <a href="mailto:ericdasilvadalaporta@gmail.com" class="contact-link">
+                                <i class="fas fa-envelope"></i> ericdasilvadalaporta@gmail.com
+                            </a>
+                            <a href="https://wa.me/555599344334" target="_blank" class="contact-link">
+                                <i class="fab fa-whatsapp"></i> +55 55 99344-334
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-image">
+                        <img src="img/kenny.png" alt="Kenny pointing" class="animated-kenny">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-lang-key="footerText"></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
