@@ -1,3 +1,40 @@
+@media (min-width: 993px) {
+    .fade-zoom-out {
+        animation: fadeSimpleOut 0.35s ease forwards !important;
+    }
+
+    .fade-zoom-in {
+        animation: fadeSimpleIn 0.35s ease forwards !important;
+    }
+
+    @keyframes fadeSimpleOut {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes fadeSimpleIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .desktop-controls {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 20px !important;
+    }
+}
+
 :root {
     --bg-light: #ffffff;
     --text-light: #333;
@@ -29,6 +66,12 @@
 body.dark-mode {
     --button-animated-bg: var(--primary-color-dark);
     --button-animated-glow: rgba(166, 125, 93, 0.4);
+}
+
+
+html,
+body {
+    overflow-x: hidden;
 }
 
 @keyframes fadeZoomOut {
@@ -71,7 +114,6 @@ body {
     color: var(--text-light);
     background-color: var(--bg-light);
     transition: background-color 0.3s ease, color 0.3s ease;
-    overflow-x: hidden;
 }
 
 body.dark-mode {
@@ -203,10 +245,11 @@ body.dark-mode .nav-links a::after {
 
 .nav-controls {
     flex: 1;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    justify-content: flex-end;
+    display: flex !important;
+    align-items: center !important;
+    gap: 20px !important;
+    justify-content: flex-end !important;
+    flex-direction: row !important;
 }
 
 .toggle {
@@ -772,8 +815,13 @@ body.dark-mode .button:hover {
     justify-content: center;
     overflow: hidden;
     perspective: 1000px;
-    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25), 0 1.5px 8px 0 rgba(123, 78, 43, 0.10);
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+body.dark-mode .card {
+    background-color: var(--card-bg-dark);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45), 0 1.5px 8px 0 rgba(166, 125, 93, 0.10);
 }
 
 body.dark-mode .card {
