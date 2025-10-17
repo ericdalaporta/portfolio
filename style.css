@@ -325,6 +325,10 @@ body.dark-mode .icon {
     background-color: var(--secondary-bg-light);
 }
 
+#tecnologias.section {
+    padding-bottom: 8rem;
+}
+
 #projetos.section,
 #contato.section {
     background-color: var(--bg-light);
