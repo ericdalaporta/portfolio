@@ -797,16 +797,20 @@ body.dark-mode .button:hover {
 }
 
 .project-grid {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     gap: 3rem;
-    flex-wrap: wrap;
     margin-top: 3rem;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card {
     position: relative;
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 300px;
     background-color: var(--card-bg-light);
     border-radius: 10px;
@@ -909,8 +913,8 @@ body.dark-mode .card__description {
     background-color: transparent;
     border-radius: 100px;
     font-weight: 600;
-    color: var(--primary-color-light);
-    box-shadow: 0 0 0 2px var(--primary-color-light);
+    color: #000000;
+    box-shadow: 0 0 0 2px #000000;
     cursor: pointer;
     overflow: hidden;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
@@ -918,8 +922,8 @@ body.dark-mode .card__description {
 }
 
 body.dark-mode .animated-button {
-    color: var(--primary-color-dark);
-    box-shadow: 0 0 0 2px var(--primary-color-dark);
+    color: #ffffff;
+    box-shadow: 0 0 0 2px #ffffff;
 }
 
 .animated-button span:last-child {
@@ -960,14 +964,23 @@ body.dark-mode .animated-button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2.5rem;
+    align-items: center;
+    gap: 2rem;
     margin-top: 3rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 2rem;
 }
 
 .tech-icons i {
-    font-size: 5rem;
+    font-size: 3.5rem;
     transition: color 0.3s ease, transform 0.3s ease;
     color: var(--text-light);
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 body.dark-mode .tech-icons i {
@@ -1016,6 +1029,71 @@ body.dark-mode .tech-icons i {
     text-shadow: 0 0 5px #000;
 }
 
+.tech-icons .devicon-angular-plain:hover {
+    color: #DD0031;
+}
+
+.tech-icons .devicon-firebase-plain:hover {
+    color: #FFCA28;
+}
+
+.tech-icons .devicon-django-plain:hover {
+    color: #092E20;
+}
+
+.tech-icons .devicon-typescript-plain:hover {
+    color: #3178C6;
+}
+
+.tech-icons .devicon-react-plain-wordmark:hover {
+    color: #61DAFB;
+}
+
+.tech-icons .devicon-nodejs-plain-wordmark:hover {
+    color: #68A063;
+}
+
+.tech-icons .devicon-bootstrap-plain-wordmark:hover {
+    color: #7952B3;
+}
+
+.tech-icons .devicon-mongodb-plain-wordmark:hover {
+    color: #13AA52;
+}
+
+.tech-icons .devicon-postgresql-plain-wordmark:hover {
+    color: #336791;
+}
+
+.tech-icons .devicon-vuejs-plain-wordmark:hover {
+    color: #4FC08D;
+}
+
+.tech-icons .devicon-tailwindcss-plain:hover {
+    color: #06B6D4;
+}
+
+.tech-icons .devicon-docker-plain-wordmark:hover {
+    color: #2496ED;
+}
+
+.tech-icons .devicon-fastapi-plain:hover {
+    color: #009688;
+}
+
+.tech-icons .devicon-flask-original:hover {
+    color: #000000;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.tech-icons .devicon-mysql-plain-wordmark:hover {
+    color: #00758F;
+}
+
+.tech-icons .devicon-redis-plain-wordmark:hover {
+    color: #DC382D;
+}
+
 .contact-intro-text {
     text-align: center;
     max-width: 800px;
@@ -1030,6 +1108,7 @@ body.dark-mode .tech-icons i {
     gap: 3rem;
     flex-wrap: wrap;
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .contact-details {
@@ -1050,6 +1129,10 @@ body.dark-mode .tech-icons i {
     font-weight: 600;
     color: #000;
     transition: color 0.3s ease;
+    text-decoration: none;
+    pointer-events: auto;
+    display: block;
+    cursor: pointer;
 }
 
 body.dark-mode .contact-link {
