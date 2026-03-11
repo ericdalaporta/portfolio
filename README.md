@@ -1,7 +1,6 @@
 # Portfólio com tema South Park
 
-Site de portfólio pessoal desenvolvido com HTML, CSS e JavaScript puro. Disponível em **[ericdalaporta.github.io/portfolio](https://ericdalaporta.github.io/portfolio/)**.
-
+Site de portfólio pessoal desenvolvido com HTML, CSS e JavaScript puro. 
 ![Pré-visualização do Portfólio](img/print-demo.png)
 
 ## Funcionalidades
