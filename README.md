@@ -1,21 +1,16 @@
-# Portfólio — Eric Dala Porta
+# Portfólio com tema South Park
 
 Site de portfólio pessoal desenvolvido com HTML, CSS e JavaScript puro. Disponível em **[ericdalaporta.github.io/portfolio](https://ericdalaporta.github.io/portfolio/)**.
 
 ![Pré-visualização do Portfólio](assets/print-demo.png)
-
----
 
 ## Funcionalidades
 
 - **Tema claro/escuro** com preferência persistida via `localStorage`
 - **Internacionalização (PT-BR / EN)** com troca dinâmica de conteúdo sem recarregar a página
 - **Animações de scroll** com GSAP ScrollTrigger
-- **Cards de projeto com flip** — revelam descrição e links ao hover
 - **Menu mobile** como dropdown flutuante com glassmorphism
 - **Layout totalmente responsivo**
-
----
 
 ## Stack
 
@@ -26,7 +21,6 @@ Site de portfólio pessoal desenvolvido com HTML, CSS e JavaScript puro. Dispon�
 
 Sem frameworks, sem dependências de build. Apenas arquivos estáticos.
 
----
 
 ## Executar localmente
 
@@ -37,7 +31,7 @@ cd portfolio
 
 Abra `index.html` diretamente no navegador ou use uma extensão como Live Server no VS Code.
 
----
+
 
 ## Contato
 
