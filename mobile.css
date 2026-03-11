@@ -35,6 +35,11 @@
             align-items: center;
             text-align: center;
             gap: 2.5rem;
+            margin-bottom: 0;
+        }
+
+        #sobre.section {
+            padding-bottom: 2.5rem;
         }
 
         .about-intro {

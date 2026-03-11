@@ -333,9 +333,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.querySelectorAll('.project-item').forEach(card => {
-        card.style.cursor = 'pointer';
         card.addEventListener('click', (e) => {
             if (e.target.closest('.project-item__links')) return;
+            if (window.innerWidth <= 992) return;
+            card.style.cursor = 'pointer';
             openProjectModal(card);
         });
     });
