@@ -23,20 +23,22 @@
 
     @media (max-width: 992px) {
 
+        /* Reduce section vertical padding on mobile */
+        .section {
+            padding: 3.5rem 5%;
+            overflow-x: clip;
+        }
+
         /* Center about and formação content on mobile */
         .about-bio-row {
             flex-direction: column;
             align-items: center;
             text-align: center;
+            gap: 2.5rem;
         }
 
         .about-intro {
             text-align: center;
-        }
-
-        /* Prevent GSAP x-transform overflow on mobile */
-        .section {
-            overflow-x: clip;
         }
 
         .timeline {
